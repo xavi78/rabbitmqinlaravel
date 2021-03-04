@@ -30,13 +30,13 @@ And the password is rabbitmq
 
 
 ## Tutorial.
-1º [Create first Connection](https://github.com/xavi78/rabbitmqinlaravel/commit/d4ff8300fcd9da192aeb02ebbea484a596e430e2#diff-36cd892b07b5b406584e49da536ba1d18b529a94fe77891143331b11b2f9b06b)   Class initRabbitmq.php 
+1º [Create first Connection](https://github.com/xavi78/rabbitmqinlaravel/tree/develop)   Class initRabbitmq.php 
 
-2º [Send first Message](https://github.com/xavi78/rabbitmqinlaravel/compare/feature/send_message)   Class sendmessage.php
+2º [Send first Message](https://github.com/xavi78/rabbitmqinlaravel/tree/feature/send_message)   Class sendmessage.php
 
-3º [Received Message](https://github.com/xavi78/rabbitmqinlaravel/compare/feature/received_message) Class receivedMessage.php
+3º [Received Message](https://github.com/xavi78/rabbitmqinlaravel/tree/feature/received_message) Class receivedMessage.php
 
-4º [Send and Received Message](https://github.com/xavi78/rabbitmqinlaravel/compare/feature/received_send_feature)
+4º [Send and Received Message](https://github.com/xavi78/rabbitmqinlaravel/tree/feature/received_send_feature)
 
-5º [Send and Recevied Message RPC ] (https://github.com/xavi78/rabbitmqinlaravel/compare/feature/rpc_message)
+5º [Send and Recevied Message RPC ](https://github.com/xavi78/rabbitmqinlaravel/tree/feature/rpc_messagee)
 
