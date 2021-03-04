@@ -1,0 +1,137 @@
+[2021-03-04 08:46:55] local.INFO: Enviando mensajes  
+[2021-03-04 10:15:59] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:01] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:02] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:02] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:03] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:03] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:03] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:04] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:04] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:05] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:06] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:07] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:07] local.INFO: Enviando mensajes  
+[2021-03-04 10:16:07] local.INFO: Enviando mensajes  
+[2021-03-04 10:31:59] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:31:59] local.ERROR: NOT_FOUND - no queue 'geekshubs' in vhost '/' {"exception":"[object] (PhpAmqpLib\\Exception\\AMQPProtocolChannelException(code: 404): NOT_FOUND - no queue 'geekshubs' in vhost '/' at /var/www/html/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php:216)
+[stacktrace]
+#0 [internal function]: PhpAmqpLib\\Channel\\AMQPChannel->channel_close(Object(PhpAmqpLib\\Wire\\AMQPReader))
+#1 /var/www/html/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AbstractChannel.php(217): call_user_func(Array, Object(PhpAmqpLib\\Wire\\AMQPReader))
+#2 /var/www/html/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AbstractChannel.php(374): PhpAmqpLib\\Channel\\AbstractChannel->dispatch('20,40', '\\x01\\x94-NOT_FOUND - ...', NULL)
+#3 /var/www/html/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php(580): PhpAmqpLib\\Channel\\AbstractChannel->wait(Array, false, 0)
+#4 /var/www/html/vendor/geekshubs/rabbitmq/src/RequestRPC.php(57): PhpAmqpLib\\Channel\\AMQPChannel->queue_bind('geekshubs', 'geekshubs.comma...', 'geekshubs.prueb...')
+#5 /var/www/html/vendor/geekshubs/rabbitmq/src/RabbitMQ.php(37): Geekshubs\\RabbitMQ\\RequestRPC->call('c1b5b75f-bb6f-4...', 'geekshubs', 'geekshubs_retur...', 'geekshubs.comma...', 'geekshubs.prueb...', '\"Hola don pepit...')
+#6 /var/www/html/src/Common/UI/Commands/sendMessageRpc.php(31): Geekshubs\\RabbitMQ\\RabbitMQ->requestRpc('c1b5b75f-bb6f-4...', 'geekshubs', 'geekshubs_retur...', 'geekshubs.comma...', 'geekshubs.prueb...', '\"Hola don pepit...')
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Microservice\\Common\\UI\\Commands\\sendMessageRpc->handle()
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#10 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#11 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#12 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call(Array)
+#13 /var/www/html/vendor/symfony/console/Command/Command.php(256): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /var/www/html/vendor/symfony/console/Application.php(971): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/html/vendor/symfony/console/Application.php(290): Symfony\\Component\\Console\\Application->doRunCommand(Object(Microservice\\Common\\UI\\Commands\\sendMessageRpc), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /var/www/html/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /var/www/html/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /var/www/html/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2021-03-04 10:32:13] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:43:31] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:44:20] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:44:20] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:44:23] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:44:23] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:45:16] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:45:16] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:46:24] local.ERROR: syntax error, unexpected 'log' (T_STRING) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'log' (T_STRING) at /var/www/html/src/Common/UI/Commands/sendMessageRpc.php:32)
+[stacktrace]
+#0 /var/www/html/vendor/composer/ClassLoader.php(344): Composer\\Autoload\\includeFile('/var/www/html/v...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Microservice\\\\Co...')
+#2 [internal function]: spl_autoload_call('Microservice\\\\Co...')
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php(830): ReflectionClass->__construct('Microservice\\\\Co...')
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php(712): Illuminate\\Container\\Container->build('Microservice\\\\Co...')
+#5 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\Container->resolve('Microservice\\\\Co...', Array)
+#6 /var/www/html/vendor/laravel/lumen-framework/src/Application.php(300): Illuminate\\Container\\Container->make('Microservice\\\\Co...', Array)
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(260): Laravel\\Lumen\\Application->make('Microservice\\\\Co...')
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(274): Illuminate\\Console\\Application->resolve('Microservice\\\\Co...')
+#9 /var/www/html/vendor/laravel/lumen-framework/src/Console/Kernel.php(212): Illuminate\\Console\\Application->resolveCommands(Array)
+#10 /var/www/html/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Laravel\\Lumen\\Console\\Kernel->getArtisan()
+#11 /var/www/html/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2021-03-04 10:46:38] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:46:38] local.INFO: Message enviado con id ->03518904-4583-4045-a00e-9bb8a25dc8aa  
+[2021-03-04 10:46:38] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:02] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:02] local.INFO: Message enviado con id ->5461bd44-1b17-457d-8b44-54c89a438874  
+[2021-03-04 10:48:02] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:26] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:26] local.INFO: Message enviado con id ->ae0788c3-a275-4272-a03b-e44b93b79f83  
+[2021-03-04 10:48:26] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:27] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:27] local.INFO: Message enviado con id ->3e07415e-2378-45a0-9b20-054bf5b6190b  
+[2021-03-04 10:48:27] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:27] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:27] local.INFO: Message enviado con id ->35ffd0a0-8525-4f7c-a431-16ea2fa98f8d  
+[2021-03-04 10:48:27] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:28] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:28] local.INFO: Message enviado con id ->6115de0d-b44c-45c2-b942-31d05275b27a  
+[2021-03-04 10:48:28] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:28] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:28] local.INFO: Message enviado con id ->53d5eab4-7c66-4fa9-aef4-64fca8ebca5c  
+[2021-03-04 10:48:28] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:29] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:29] local.INFO: Message enviado con id ->27ffff19-2214-4abe-97b4-201f9c03a60a  
+[2021-03-04 10:48:29] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:29] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:29] local.INFO: Message enviado con id ->ab64c13e-1421-4dff-ab95-36eedec6edd2  
+[2021-03-04 10:48:29] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:30] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:30] local.INFO: Message enviado con id ->f6b27f7c-e808-417c-bf5e-3ad18ff37f0d  
+[2021-03-04 10:48:30] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:30] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:30] local.INFO: Message enviado con id ->b04b49bd-215e-4e35-b53c-32085bdd338c  
+[2021-03-04 10:48:30] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:30] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:30] local.INFO: Message enviado con id ->61b510fc-aa28-44d0-beba-f71be16ccd76  
+[2021-03-04 10:48:30] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:31] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:31] local.INFO: Message enviado con id ->377c4ae5-1036-4947-b4e7-4811ecf0db19  
+[2021-03-04 10:48:31] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:31] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:31] local.INFO: Message enviado con id ->5f0ecc26-2d37-45c0-bce3-b6b5741805ab  
+[2021-03-04 10:48:31] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:32] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:32] local.INFO: Message enviado con id ->3b2f20a8-0163-4ff5-a342-ffadffb9ac57  
+[2021-03-04 10:48:32] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:32] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:32] local.INFO: Message enviado con id ->15418505-d619-4bd5-b84c-d72c33157108  
+[2021-03-04 10:48:32] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:32] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:32] local.INFO: Message enviado con id ->6c080154-b9d1-4152-8741-32bcda56b094  
+[2021-03-04 10:48:32] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:33] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:33] local.INFO: Message enviado con id ->38c03232-df5a-4978-a97f-b1042c7372f3  
+[2021-03-04 10:48:33] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:33] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:33] local.INFO: Message enviado con id ->9f839694-241e-42d7-93bb-817e4a54adf0  
+[2021-03-04 10:48:33] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:34] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:34] local.INFO: Message enviado con id ->771f852b-27a9-451d-9e14-ffd7cb9e5b1e  
+[2021-03-04 10:48:34] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:34] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:34] local.INFO: Message enviado con id ->f063ebb5-85e2-453c-8ec2-c82e77899d28  
+[2021-03-04 10:48:34] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:34] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:34] local.INFO: Message enviado con id ->dbe54e88-f22a-4ef8-8be9-e149b55d3787  
+[2021-03-04 10:48:34] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:34] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:34] local.INFO: Message enviado con id ->e00b5ffb-386f-4d72-b256-6ba91bafb6cf  
+[2021-03-04 10:48:34] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  
+[2021-03-04 10:48:35] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-04 10:48:35] local.INFO: Message enviado con id ->e70853ad-253d-4348-851c-366a0ccad781  
+[2021-03-04 10:48:35] local.INFO: Contestación ->{"respuesta":"Hola Don Jose"}  

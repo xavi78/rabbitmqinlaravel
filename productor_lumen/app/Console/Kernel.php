@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \Microservice\Common\UI\Commands\initRabbitmq::class,
+        \Microservice\Common\UI\Commands\sendMessageRpc::class
     ];
 
     /**
