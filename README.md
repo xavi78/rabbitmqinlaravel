@@ -20,6 +20,7 @@
 
 ## Installation
 First clone this repository in a folder !!!
+Checkout to develop branch.
 Second execute sh init.sh for linux, in windows 
 
 
@@ -30,6 +31,8 @@ And the password is rabbitmq
 
 
 ## Tutorial.
+Checkout to branch.
+
 1º [Create first Connection](https://github.com/xavi78/rabbitmqinlaravel/tree/develop)   Class initRabbitmq.php 
 
 2º [Send first Message](https://github.com/xavi78/rabbitmqinlaravel/tree/feature/send_message)   Class sendmessage.php
