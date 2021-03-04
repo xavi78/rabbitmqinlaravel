@@ -15,6 +15,7 @@
 ## Requirements.
 * Docker
 * Docker-Compose
+* Git
 * PHP >= 7.4
 
 
