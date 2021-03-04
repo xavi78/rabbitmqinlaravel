@@ -38,3 +38,5 @@ And the password is rabbitmq
 
 4º [Send and Received Message](https://github.com/xavi78/rabbitmqinlaravel/compare/feature/received_send_feature)
 
+5º [Send and Recevied Message RPC ] (https://github.com/xavi78/rabbitmqinlaravel/compare/feature/rpc_message)
+
