@@ -600,3 +600,27 @@
 [2021-03-03 10:45:16] local.INFO: Iniciando las colas ->rabbit  
 [2021-03-03 11:06:50] local.INFO: Iniciando las colas ->rabbit  
 [2021-03-03 11:07:56] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-03 12:32:43] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-03 12:35:12] local.INFO: Iniciando las colas ->rabbit  
+[2021-03-03 12:38:06] local.INFO: Enviando mensajes  
+[2021-03-03 12:38:06] local.ERROR: Error ->NOT_FOUND - no exchange 'geekshubs.command.message' in vhost '/' {"exception":"[object] (Exception(code: 0): Error ->NOT_FOUND - no exchange 'geekshubs.command.message' in vhost '/' at /var/www/html/vendor/geekshubs/rabbitmq/src/Publisher.php:30)
+[stacktrace]
+#0 /var/www/html/vendor/geekshubs/rabbitmq/src/RabbitMQ.php(31): Geekshubs\\RabbitMQ\\Publisher->__invoke('Geekshubs', 'geekshubs.comma...', 'geekshubs.prueb...', '\"Hola Mundo\"')
+#1 /var/www/html/src/Common/UI/Commands/sendMessage.php(30): Geekshubs\\RabbitMQ\\RabbitMQ->publicMessage('Geekshubs', 'geekshubs.comma...', 'geekshubs.prueb...', '\"Hola Mundo\"')
+#2 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Microservice\\Common\\UI\\Commands\\sendMessage->handle()
+#3 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#5 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#6 /var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call(Array)
+#8 /var/www/html/vendor/symfony/console/Command/Command.php(256): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 /var/www/html/vendor/symfony/console/Application.php(971): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /var/www/html/vendor/symfony/console/Application.php(290): Symfony\\Component\\Console\\Application->doRunCommand(Object(Microservice\\Common\\UI\\Commands\\sendMessage), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /var/www/html/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php(92): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /var/www/html/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /var/www/html/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 {main}
+"} 
+[2021-03-03 12:46:15] local.INFO: Enviando mensajes  
