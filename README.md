@@ -35,3 +35,6 @@ And the password is rabbitmq
 2º [Send first Message](https://github.com/xavi78/rabbitmqinlaravel/compare/feature/send_message)   Class sendmessage.php
 
 3º [Received Message](https://github.com/xavi78/rabbitmqinlaravel/compare/feature/received_message) Class receivedMessage.php
+
+4º [Send and Received Message](https://github.com/xavi78/rabbitmqinlaravel/compare/feature/received_send_feature)
+
