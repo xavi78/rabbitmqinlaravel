@@ -1,6 +1,6 @@
 # rabbitmqinlaravel
 <h1 align="center">
- Repository from meetup RabbitMQ from Laravel.
+ Repository example RabbitMQ from Laravel.
 </h1>
 
 <p align="center">
